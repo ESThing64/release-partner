@@ -14,13 +14,13 @@ import AnimateButton from 'ui-component/extended/AnimateButton';
 import { gridSpacing } from 'store/constant';
 
 // assets
-import dashboard from 'assets/images/landing/dashboard.png';
+import dashboard from 'assets/images/landing/ying-yang-purple.svg';
 import widget1 from 'assets/images/landing/widget-1.png';
 import widget2 from 'assets/images/landing/widget-2.png';
 
 // styles
 const HeaderImage = styled('img')(({ theme }) => ({
-    maxWidth: '100%',
+    maxWidth: '80%',
     borderRadius: '20px',
     transform: 'scale(1.7)',
     transformOrigin: theme.direction === 'rtl' ? '100% 50%' : '0 50%',
@@ -68,9 +68,10 @@ const HeaderPage = () => {
                                         lineHeight: 1.4
                                     }}
                                 >
-                                    Build Your Next Project With
-                                    <Box component="span" sx={{ ml: 2, color: theme.palette.primary.main }}>
-                                        Berry
+                                    Welcome to &nbsp;
+
+                                    <Box component="span" sx={{ sm: 2, color: theme.palette.primary.main }}>
+                                     releasePartner.js
                                     </Box>
                                 </Typography>
                             </motion.div>
@@ -96,7 +97,7 @@ const HeaderPage = () => {
                                         lineHeight: 1.4
                                     }}
                                 >
-                                    Berry is React based admin template which helps you to build faster and beautiful web applications.
+                                    releasePartner is here to help you find releasing partners from all over the world. Don't worry about time zones, we will manage the time difference for you!
                                 </Typography>
                             </motion.div>
                         </Grid>
@@ -122,21 +123,11 @@ const HeaderPage = () => {
                                                 variant="contained"
                                                 color="secondary"
                                             >
-                                                Live Preview
+                                                Sign Up
                                             </Button>
                                         </AnimateButton>
                                     </Grid>
-                                    <Grid item>
-                                        <Button
-                                            component={Link}
-                                            href="https://material-ui.com/store/items/berry-react-material-admin/"
-                                            target="_blank"
-                                            size="large"
-                                            variant="text"
-                                        >
-                                            Purchase Now
-                                        </Button>
-                                    </Grid>
+                                  
                                 </Grid>
                             </motion.div>
                         </Grid>
@@ -196,16 +187,16 @@ const HeaderPage = () => {
                                                     />
                                                 </g>
                                                 <defs>
-                                                    <clipPath id="clip0">
+                                                    {/* <clipPath id="clip0">
                                                         <rect width="300" height="238.3" fill="white" transform="translate(100 131)" />
-                                                    </clipPath>
+                                                    </clipPath> */}
                                                 </defs>
                                             </svg>
                                         </Avatar>
                                     </Grid>
                                     <Grid item xs zeroMinWidth>
                                         <Typography variant="h4" component="div" color="inherit" sx={{ fontWeight: 400, lineHeight: 1.4 }}>
-                                            <b>Built with Material-UI &#169;</b> - The most popular React Component Library.
+                                            <b>Built with Material-UI &#169;</b>
                                         </Typography>
                                     </Grid>
                                 </Grid>
@@ -215,7 +206,7 @@ const HeaderPage = () => {
                 </Grid>
                 <Grid item xs={12} md={7} sx={{ display: { xs: 'none', md: 'flex' } }}>
                     <Box sx={{ position: 'relative', mt: 8.75 }}>
-                        <HeaderImage src={dashboard} alt="Berry" />
+                        <HeaderImage height={450} src={dashboard} alt="Berry" />
                         <Box
                             sx={{
                                 position: 'absolute',
@@ -235,7 +226,7 @@ const HeaderPage = () => {
                                     delay: 0.2
                                 }}
                             >
-                                <HeaderAnimationImage src={widget1} alt="Berry" />
+                                {/* <HeaderAnimationImage src={widget1} alt="Berry" /> */}
                             </motion.div>
                         </Box>
                         <Box
@@ -258,7 +249,7 @@ const HeaderPage = () => {
                                     delay: 0.4
                                 }}
                             >
-                                <HeaderAnimationImage src={widget2} alt="Berry" />
+                                {/* <HeaderAnimationImage src={widget2} alt="Berry" /> */}
                             </motion.div>
                         </Box>
                     </Box>

@@ -9,9 +9,12 @@ import Avatar from 'ui-component/extended/Avatar';
 import { gridSpacing } from 'store/constant';
 
 // assets
-import PaletteTwoToneIcon from '@mui/icons-material/PaletteTwoTone';
-import ReorderTwoToneIcon from '@mui/icons-material/ReorderTwoTone';
-import SpeedTwoToneIcon from '@mui/icons-material/SpeedTwoTone';
+
+
+
+import EventAvailableIcon from '@mui/icons-material/EventAvailable';
+import PersonSearchIcon from '@mui/icons-material/PersonSearch';
+import AccessTimeIcon from '@mui/icons-material/AccessTime';
 
 // =============================|| LANDING - FEATURE PAGE ||============================= //
 
@@ -34,12 +37,12 @@ const FeaturePage = () => {
                         </Grid>
                         <Grid item xs={12}>
                             <Typography variant="h2" component="div">
-                                What Berry brings to you?
+                                What does releasePartner bring to you?
                             </Typography>
                         </Grid>
                         <Grid item xs={12}>
                             <Typography variant="body2">
-                                Berry is a solid dashboard template for your next project, with the following top features.
+                             
                             </Typography>
                         </Grid>
                     </Grid>
@@ -62,16 +65,16 @@ const FeaturePage = () => {
                                                     color: theme.palette.primary.main
                                                 }}
                                             >
-                                                <PaletteTwoToneIcon fontSize="large" />
+                                                <PersonSearchIcon fontSize="large" />
                                             </Avatar>
                                         </Grid>
                                         <Grid item xs={12}>
-                                            <Typography variant="h3">Beautiful User Interface</Typography>
+                                            <Typography variant="h3">Finding A Partner is Easy</Typography>
                                         </Grid>
                                         <Grid item xs={12}>
                                             <Typography variant="body2">
-                                                Warm color palates and minimally designed interfaces make the user experience more
-                                                comfortable.
+
+                                            Find people who have similar free time as you or do a quick search to see who is free at different times of day.
                                             </Typography>
                                         </Grid>
                                     </Grid>
@@ -94,16 +97,19 @@ const FeaturePage = () => {
                                                     color: theme.palette.secondary.main
                                                 }}
                                             >
-                                                <ReorderTwoToneIcon fontSize="large" />
+                                                <EventAvailableIcon fontSize="large" />
                                             </Avatar>
                                         </Grid>
                                         <Grid item xs={12}>
-                                            <Typography variant="h3">Modern Technology Stack</Typography>
+                                            <Typography variant="h3">Scheduling</Typography>
                                         </Grid>
                                         <Grid item xs={12}>
                                             <Typography variant="body2">
-                                                Technology behind Berry is less complicated so you can focus on creating the actual web
-                                                applications.
+                                           
+                                            Schedule releasing sessions with an easy to use interface.
+
+
+
                                             </Typography>
                                         </Grid>
                                     </Grid>
@@ -126,15 +132,15 @@ const FeaturePage = () => {
                                                     color: theme.palette.success.dark
                                                 }}
                                             >
-                                                <SpeedTwoToneIcon fontSize="large" />
+                                                <AccessTimeIcon fontSize="large" />
                                             </Avatar>
                                         </Grid>
                                         <Grid item xs={12}>
-                                            <Typography variant="h3">Performance Centric</Typography>
+                                            <Typography variant="h3">Time Zones</Typography>
                                         </Grid>
                                         <Grid item xs={12}>
                                             <Typography variant="body2">
-                                                Code that makes it easier and faster to render the page for your web applications.
+                                            We mange time difference for you! Weather your searching for a partner or setting a schedule with a partner you have already connected with. We got you!
                                             </Typography>
                                         </Grid>
                                     </Grid>

@@ -39,19 +39,8 @@ const Landing = () => (
         <SecondWrapper>
             <Feature />
         </SecondWrapper>
-        <SecondWrapper>
-            <Demos />
-        </SecondWrapper>
-        <SecondWrapper>
-            <Layouts />
-        </SecondWrapper>
-        <SecondWrapper>
-            <KeyFeature />
-        </SecondWrapper>
-        <SecondWrapper>
-            <Subscribe />
-        </SecondWrapper>
         <Footer />
+
         <Customization />
     </>
 );

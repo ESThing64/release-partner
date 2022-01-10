@@ -7,10 +7,9 @@ import { gridSpacing } from 'store/constant';
 
 // assets
 import FacebookIcon from '@mui/icons-material/Facebook';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import InstagramIcon from '@mui/icons-material/Instagram';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
-import logoDark from 'assets/images/logo-white.svg';
+import logoDark from '../../../assets/images/icons/ying-yang-2.png';
 
 // styles
 const FooterWrapper = styled('div')(({ theme }) => ({
@@ -57,7 +56,7 @@ const FooterPage = () => {
                 <Container>
                     <Grid container alignItems="center" spacing={gridSpacing}>
                         <Grid item xs={12} sm={4}>
-                            <img src={logoDark} alt="Berry" width="100" />
+                            <img src={logoDark} alt="Berry" width="35" />
                         </Grid>
                         <Grid item xs={12} sm={8}>
                             <Grid
@@ -66,22 +65,22 @@ const FooterPage = () => {
                                 spacing={2}
                                 sx={{ justifyContent: 'flex-end', [theme.breakpoints.down('md')]: { justifyContent: 'center' } }}
                             >
-                                <Grid item>
+                                {/* <Grid item>
                                     <FooterLink href="https://blog.berrydashboard.io/" target="_blank" underline="hover">
                                         <InstagramIcon />
                                         Blog
                                     </FooterLink>
-                                </Grid>
+                                </Grid> */}
                                 <Grid item>
-                                    <FooterLink href="https://www.facebook.com/codedthemes" target="_blank" underline="hover">
+                                    <FooterLink href="https://www.facebook.com/johnm.coakley" target="_blank" underline="hover">
                                         <FacebookIcon />
                                         Facebook
                                     </FooterLink>
                                 </Grid>
                                 <Grid item>
-                                    <FooterLink href="https://twitter.com/codedthemes" target="_blank" underline="hover">
-                                        <TwitterIcon />
-                                        Twitter
+                                    <FooterLink href="https://github.com/ESThing64" target="_blank" underline="hover">
+                                        <GitHubIcon />
+                                        GitHub
                                     </FooterLink>
                                 </Grid>
                             </Grid>
